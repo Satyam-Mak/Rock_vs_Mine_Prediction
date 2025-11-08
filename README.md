@@ -4,11 +4,11 @@
 ---
 
 ## 📌 Project Overview  
-This project aims to build a **Machine Learning model** that can accurately predict whether an object detected by SONAR signals is a **rock** or a **mine** (metal cylinder).  
-It’s a **binary classification problem** solved using Python and popular ML libraries.  
+This project aims to build a **Machine Learning model** that can accurately predict whether an object detected by SONAR signals is a **Rock** or a **Mine (metal cylinder)**.  
+It’s a **binary classification problem** solved using Python and the **Logistic Regression** algorithm.  
 
-The dataset contains 60 numerical features, representing SONAR signal returns bounced off different surfaces.  
-We use various data preprocessing techniques, exploratory data analysis (EDA), and ML algorithms to achieve high prediction accuracy.
+The dataset contains 60 numerical features that represent SONAR signal returns bounced off various surfaces.  
+We use proper **data preprocessing**, **exploratory data analysis (EDA)**, and **model evaluation techniques** to achieve a high level of prediction accuracy.
 
 ---
 
@@ -19,30 +19,27 @@ We use various data preprocessing techniques, exploratory data analysis (EDA), a
    - Contains 208 samples and 60 numerical attributes  
 
 2. **Data Preprocessing**  
-   - Handled missing values (if any)  
-   - Standardized feature values using `StandardScaler`  
-   - Encoded labels (`R` → Rock, `M` → Mine)  
+   - Checked for missing values  
+   - Standardized features using `StandardScaler`  
+   - Encoded target labels (`R` → Rock, `M` → Mine)  
 
 3. **Exploratory Data Analysis (EDA)**  
    - Visualized feature distributions  
-   - Checked correlation between features  
-   - Balanced class check  
+   - Checked data balance and correlations  
+   - Explored class patterns  
 
 4. **Model Building**  
-   - Algorithms used:  
-     - Logistic Regression  
-     - Support Vector Machine (SVM)  
-     - Random Forest Classifier  
-   - Evaluated performance using accuracy score  
+   - Algorithm Used: **Logistic Regression**  
+   - Split data into training and testing (80% / 20%)  
+   - Trained and optimized the model for classification  
 
 5. **Model Evaluation**  
-   - Split data into training (80%) and testing (20%)  
-   - Compared accuracy, precision, and recall  
-   - Final model: **SVM** (highest accuracy)  
+   - Evaluated using accuracy score, confusion matrix, and classification report  
+   - Achieved consistent results with balanced precision and recall  
 
 6. **Model Deployment (Optional)**  
-   - Exported trained model using `pickle`  
-   - Can be integrated into a web app using Flask or Streamlit  
+   - Trained model saved using `pickle`  
+   - Can be deployed using **Flask** or **Streamlit** for real-time predictions  
 
 ---
 
@@ -50,8 +47,9 @@ We use various data preprocessing techniques, exploratory data analysis (EDA), a
 
 - **Dataset Name:** Sonar Data Set  
 - **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))  
-- **Attributes:** 60 numerical features (0.0 to 1.0)  
-- **Label:**  
+- **Samples:** 208  
+- **Attributes:** 60 numerical features (values range between 0.0 to 1.0)  
+- **Target Labels:**  
   - `R` → Rock  
   - `M` → Mine  
 
@@ -71,11 +69,11 @@ We use various data preprocessing techniques, exploratory data analysis (EDA), a
 
 ## 🧠 Model Performance  
 
-| Model | Accuracy (%) |
-|--------|---------------|
-| Logistic Regression | ~82% |
-| SVM | ~86% |
-| Random Forest | ~83% |
+| Metric | Score |
+|--------|--------|
+| Algorithm | Logistic Regression |
+| Training Accuracy | ~84% |
+| Testing Accuracy | ~83% |
 
 ✅ **Final Chosen Model:** Logistic Regression  
 ✔️ Simple yet effective model for binary classification tasks  
