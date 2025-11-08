@@ -77,7 +77,8 @@ We use various data preprocessing techniques, exploratory data analysis (EDA), a
 | SVM | ~86% |
 | Random Forest | ~83% |
 
-✅ **Final Chosen Model:** SVM (Support Vector Machine)
+✅ **Final Chosen Model:** Logistic Regression  
+✔️ Simple yet effective model for binary classification tasks  
 
 ---
 
